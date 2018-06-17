@@ -216,7 +216,7 @@ fn test_bitfield_u16(bf: &mut BitField<u16>) {
     assert_eq!(false, bf.check_bit(2));
     assert_eq!(true, bf.check_bit(3));
     assert!(bf.check_pattern(0b1011));
-    println!("All tests passed for BitField<usize>.");
+    println!("All tests passed for BitField<u16>.");
 }
 
 fn test_bitfield_u32(bf: &mut BitField<u32>) {
@@ -240,7 +240,7 @@ fn test_bitfield_u32(bf: &mut BitField<u32>) {
     assert_eq!(false, bf.check_bit(2));
     assert_eq!(true, bf.check_bit(3));
     assert!(bf.check_pattern(0b1011));
-    println!("All tests passed for BitField<usize>.");
+    println!("All tests passed for BitField<u32>.");
 }
 
 fn test_bitfield_u64(bf: &mut BitField<u64>) {
@@ -264,7 +264,7 @@ fn test_bitfield_u64(bf: &mut BitField<u64>) {
     assert_eq!(false, bf.check_bit(2));
     assert_eq!(true, bf.check_bit(3));
     assert!(bf.check_pattern(0b1011));
-    println!("All tests passed for BitField<usize>.");
+    println!("All tests passed for BitField<u64>.");
 }
 
 fn test_bitfield_vec_bool(bf: &mut BitField<Vec<bool>>) {
